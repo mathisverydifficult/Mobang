@@ -45,8 +45,6 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-# STS (Spring Tool Suite)
-.springBeans
 
 # Code Recommenders
 .recommenders/
@@ -60,8 +58,7 @@ local.properties
 .worksheet
 
 ### Eclipse Patch ###
-# Eclipse Core
-.project
+
 
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
