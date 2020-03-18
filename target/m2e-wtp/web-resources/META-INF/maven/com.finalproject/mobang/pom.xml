@@ -20,6 +20,8 @@
 		<spring.security.version>5.2.2.RELEASE</spring.security.version>
 	</properties>
 	<dependencies>
+
+	
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
