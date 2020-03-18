@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+<<<<<<< HEAD
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String user_home(Locale locale, Model model) {
@@ -35,4 +36,45 @@ public class HomeController {
 	
 
 	
+=======
+
+	@RequestMapping(value = "/")
+	public String home(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "user/user_home";
+	}
+	
+	@RequestMapping(value = "home.user")
+	public String mainhome(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "user/user_home";
+	}
+
+	@RequestMapping(value="/roommate_recommand.user")
+	public String roommaterecommand(Model model) {
+		
+		return "/user/roommate_recommand";
+	}
+	
+	@RequestMapping(value="/favorite_recent.user")
+	public String favoriterencent(Model model) {
+		
+		return "user/favorite_recent";
+	}
+	@RequestMapping(value="/favorite_dibs.user")
+	public String favoritedibs(Model model) {
+		
+		return "/user/favorite_dibs";
+	}
+	
+	@RequestMapping(value="/room_search.user")
+	public String roomsearch(Model model) {
+		
+		return "user/room_search";
+	}
+>>>>>>> c91ddfeecd27b863d47e854016734249f3d8cd1e
 }
