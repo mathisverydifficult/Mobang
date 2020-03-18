@@ -19,6 +19,7 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+<<<<<<< HEAD
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -30,17 +31,23 @@ public class HomeController {
 	}
 	// 모두가 볼 수 있는 페이지(.all로 요청)
 	@RequestMapping(value = "hello.all", method = RequestMethod.GET)
+=======
+	
+	@RequestMapping(value = "/")
+>>>>>>> b84f3b37ce12d60b0f48e598697854534e3a5731
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("home");
+
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		return "user/user_home";
+	}
+	
+	@RequestMapping(value = "test.do")
+	public String test(Locale locale, Model model) {
+		logger.info("test");
+
 		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		return "home";
+		return "/tiles/template";
 	}
 	// 룸메이트 추천해주는 페이지 - 방에 들어가서 나와 비슷한 정보를 가진 사람들을 추천해주는 것이기 때문에
 	// 회원정보가 필요함(user정보) .user로 처리
