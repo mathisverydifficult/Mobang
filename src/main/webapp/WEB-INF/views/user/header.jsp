@@ -11,14 +11,14 @@
 	<div class="container">
 	<header class="headerbox">
 		<div class="left">
-			<a href="" class="myhome">모방</a>
+			<a href="home.user" class="myhome">모방</a>
 			<a href="" class="aa">모방중개사 사이트></a>
 		</div>
 		<div>
 			<div class="right">
 				<div class="right1">
-					<a href="" class="aa">방 찾기</a>
-					<a href="" class="aa">관심목록</a>
+					<a href="room_search.user" class="aa">방 찾기</a>
+					<a href="favorite_recent.user" class="aa">관심목록</a>
 					<a href="" class="aa">알림</a>
 				</div>
 				<div class="right2">

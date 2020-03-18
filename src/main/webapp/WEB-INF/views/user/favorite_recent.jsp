@@ -17,7 +17,7 @@
 
 <title>Insert title here</title>
 </head>
-
+<jsp:include page="/WEB-INF/views/user/header.jsp"/>
 
 <body>
 
@@ -25,37 +25,6 @@
 	
 </div>
 
-
-<div class="container" style="margin-bottom: 30px;">
-	<nav class="page-hearder">
-		<a style="float: left; width: 61px; height: 70px; position: relative;">모방</a>
-		<div style="display: inline-block; margin-top: 22px; margin-left: 20px; line-height: 19px;">
-			<a>중개사</a>
-		</div>
-		<div style="float:right;">
-			<div style="float:left;">
-				<a>방찾기</a>
-				<a>관심목록</a>
-				<a>알림</a>
-			</div>
-			<div class="dropdown" style="float:right;">
-			    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">로그인
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu">
-			      <li><a href="#">정보수정</a></li>
-			      <li class="divider"></li>
-			      <li><a href="#">연락한 부동산</a></li>
-			      <li class="divider"></li>
-			      <li><a href="#">내가 쓴 리뷰</a></li>
-			      <li class="divider"></li>
-			      <li><a href="#">로그아웃</a></li>
-			    </ul>
-			  </div>
-		</div>
-		
-	</nav>
-
-</div>
 <!-- rgb(51, 85, 139) 모방 메인색깔 -->
 <div class="jumbotron text-center" style="background-color:#33558B;">
   <h1 style="color: white; font-style: inherit;">최근 본 방</h1>
