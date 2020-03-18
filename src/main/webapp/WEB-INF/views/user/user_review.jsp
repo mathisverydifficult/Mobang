@@ -8,7 +8,23 @@
 </head>
 <body>
 
-	<h1>내가 쓴 리뷰</h1>
+	<div>
+		<p>My 리뷰
+	</div>
+	<div class="secondpara">
+		<table border="1">
+			<tr>
+				<th>방번호</th>
+				<th>내용</th>
+				<th>평가</th>
+			<tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
 
 </body>
 </html>

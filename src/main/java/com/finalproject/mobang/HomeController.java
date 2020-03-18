@@ -19,21 +19,21 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "hello.do", method = RequestMethod.GET)
+	
+	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("home");
+
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		return "user/user_home";
+	}
+	
+	@RequestMapping(value = "test.do")
+	public String test(Locale locale, Model model) {
+		logger.info("test");
+
 		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		return "home";
+		return "/tiles/template";
 	}
 	
 }

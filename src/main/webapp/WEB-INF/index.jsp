@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="hello.do">hello</a>
-	
-	
-	
+
+	<div>
+		<p><a href="home.do">홈홈</a></p>
+		
+	</div>
+
 </body>
 </html>
