@@ -34,6 +34,13 @@ public class HomeController {
 		
 		return "user/user_home";
 	}
+	@RequestMapping(value="index.all")
+	public String index() {
+		return "index";
+	}
+	
+	
+	
 
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
