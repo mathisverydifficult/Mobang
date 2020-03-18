@@ -141,7 +141,7 @@
     <div class="col-sm-3">
       <img src="resources/user/img/cat4.png" class="img-thumbnail" alt="cat1">
       <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..뭐라도 바꾸자</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
     </div>
   </div>
 </div>
