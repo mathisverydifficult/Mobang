@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<a href="login.do">hello</a>
+	<a href="hello.do">hello</a>
 </body>
 </html>

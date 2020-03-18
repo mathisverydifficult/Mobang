@@ -7,7 +7,12 @@
                                  http://www.springframework.org/schema/security
                                  http://www.springframework.org/schema/security/spring-security.xsd">
         
+       <!-- 확장자를 이용해 패턴을 걸 때는 /**/*.확장자 로 해야한다 (Ant Pattern) -->
+       <http pattern="/**/*.js" security="none"/>
+       <http pattern="/**/*.css" security="none"/>
+       <http pattern="/images/*" security="none"/> 
        <http auto-config="true" use-expressions="true">
+            <intercept-url pattern="/hello.do" access="hasRole('ROLE_USER')"/>
             <intercept-url pattern="/**" access="permitAll" />
        </http>
         

@@ -31,6 +31,16 @@
 	<!-- '/' 루트로 오는 모든 요청을 appServlet(DispatcherServlet)이 받아서 적절한 controller에 넘김  -->	
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
+		<url-pattern>*.user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
@@ -83,5 +93,5 @@
 	  <param-name>contextConfigLocation</param-name>
 	  <param-value>/WEB-INF/spring/appServlet/security-context.xml</param-value>
 	</context-param>
-	-->
+	
 </web-app>
