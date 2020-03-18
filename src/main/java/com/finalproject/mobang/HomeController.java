@@ -18,32 +18,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	
-	// 처음 웹프로젝트 실행할 때 처음 이동하는 페이지 설정
-	@RequestMapping(value="/")
-	public String homepage(Model model) {
-		return "index";
-	}
-	// 모두가 볼 수 있는 페이지(.all로 요청)
-	@RequestMapping(value = "hello.all", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("home");
+
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		return "home";
+		return "user/user_home";
 	}
-	// 룸메이트 추천해주는 페이지 - 방에 들어가서 나와 비슷한 정보를 가진 사람들을 추천해주는 것이기 때문에
-	// 회원정보가 필요함(user정보) .user로 처리
+	
+	@RequestMapping(value = "home.user")
+	public String mainhome(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "user/user_home";
+	}
+	// 猷몃찓�씠�듃 異붿쿇�빐二쇰뒗 �럹�씠吏� - 諛⑹뿉 �뱾�뼱媛��꽌 �굹�� 鍮꾩듂�븳 �젙蹂대�� 媛�吏� �궗�엺�뱾�쓣 異붿쿇�빐二쇰뒗 寃껋씠湲� �븣臾몄뿉
+	// �쉶�썝�젙蹂닿� �븘�슂�븿(user�젙蹂�) .user濡� 泥섎━
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
 		
@@ -53,7 +45,7 @@ public class HomeController {
 	@RequestMapping(value="/favorite_recent.user")
 	public String favoriterencent(Model model) {
 		
-		return "/user/favorite_recent";
+		return "user/favorite_recent";
 	}
 	@RequestMapping(value="/favorite_dibs.user")
 	public String favoritedibs(Model model) {
@@ -61,5 +53,9 @@ public class HomeController {
 		return "/user/favorite_dibs";
 	}
 	
-	
+	@RequestMapping(value="/room_search.user")
+	public String roomsearch(Model model) {
+		
+		return "user/room_search";
+	}
 }
