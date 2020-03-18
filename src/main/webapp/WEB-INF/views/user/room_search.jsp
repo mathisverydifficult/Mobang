@@ -5,36 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/user/css/roommate_recommand.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8ded785b631dc1b3efa28d959d4d6d5&libraries=services"></script>
 
-	<div class="container">
-		<h1>방 찾기</h1>
-		<div class="row">
-			<div class="col-sm-6">
-				<div id="map" style="width:500px;height:400px;"></div>
-			
-			</div>
-			<div class="col-sm-6">
-			
-				<p>어디로</p>
-			</div>
-		
-		</div>
-		
-	
-	
-	
-	</div>
-	
-	
+	<h1>방 찾기</h1>
 
 	<div id="map" style="width:500px;height:400px;"></div>
 	
