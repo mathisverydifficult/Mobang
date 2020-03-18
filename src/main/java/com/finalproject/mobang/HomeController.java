@@ -34,8 +34,8 @@ public class HomeController {
 		
 		return "user/user_home";
 	}
-	// 猷몃찓�씠�듃 異붿쿇�빐二쇰뒗 �럹�씠吏� - 諛⑹뿉 �뱾�뼱媛��꽌 �굹�� 鍮꾩듂�븳 �젙蹂대�� 媛�吏� �궗�엺�뱾�쓣 異붿쿇�빐二쇰뒗 寃껋씠湲� �븣臾몄뿉
-	// �쉶�썝�젙蹂닿� �븘�슂�븿(user�젙蹂�) .user濡� 泥섎━
+	
+	
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
 		

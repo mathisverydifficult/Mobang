@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+.all{
+	width: 100%;
+    position: absolute;
+    top: 136px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.leftpara{
+	position: absolute;
+	width: 980px;
+	height:100%;
+}

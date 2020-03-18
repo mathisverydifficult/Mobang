@@ -5,16 +5,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/user/css/room_search.css">
+<jsp:include page="/WEB-INF/views/user/header.jsp"/>
 </head>
 <body>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8ded785b631dc1b3efa28d959d4d6d5&libraries=services"></script>
 
-	<h1>방 찾기</h1>
-
-	<div id="map" style="width:500px;height:400px;"></div>
 	
+<div class="container">
+	
+	<div class="all">
+		<div class="leftpara">
+			
+		</div>
+		<div id="map" style=" position:absolute; width:500px;height:400px;"></div>
+	</div>
+</div>
+
+
 	<script type="text/javascript">
 		// 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
 		var infowindow = new kakao.maps.InfoWindow({zIndex:1});
@@ -28,7 +43,7 @@
 		
 		var ps = new kakao.maps.services.Places();	//장소 검색 객체 생성
 		
-		ps.keywordSearch('강남역', placesSearchCB);	//키워드로 장소를 검색
+		ps.keywordSearch('강남', placesSearchCB);	//키워드로 장소를 검색
 		
 		//키워드 검색 완료 시 호출되는 콜백함수
 		function placesSearchCB(data, status, pagination) {
