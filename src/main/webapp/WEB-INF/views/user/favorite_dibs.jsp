@@ -24,39 +24,16 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_blog&stacked=h
 
  -->
 <!-- 펼치면서 디브때매 밀림.. -->
-<div class="container">
-  <h2>Collapsible List Group</h2>
-  <div class="panel-group">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse">
-        <ul class="list-group">
-          <li class="list-group-item">One</li>
-          <li class="list-group-item">Two</li>
-          <li class="list-group-item">Three</li>
-        </ul>
-        <div class="panel-footer">Footer</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="container">
-  <div class="page-header">
-    <h1>모방</h1>  
-  </div>      
-  <p>This is another text.</p>      
-</div>
+<jsp:include page="/WEB-INF/views/user/header.jsp"/>
 <!-- rgb(51, 85, 139) 모방 메인색깔 -->
 <div class="jumbotron text-center" style="background-color:#33558B;">
-  <h1 style="color: white; font-style: inherit;">찜한 방</h1>
-  
+  <div>
+  	<h1 style="color: white;">관심목록</h1>
+  </div>
+  <div>
+  	<a class="styleroomattention" href="" style="font-size: 30px;">최근 본 방</a>
+  	<a class="styleroomattention" href="" style="font-size: 30px;">찜한 방</a>
+  </div>
 </div>
 
 <div class="container">

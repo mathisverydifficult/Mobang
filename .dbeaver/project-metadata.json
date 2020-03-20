@@ -1,0 +1,1 @@
+{"resources":{"src/main/webapp/WEB-INF/spring/sqls/admin.sql":{"sql-editor-data-source-id":"oracle_thin-170f0429d39-4d5181bfa464e433","default-schema":"KH"},"src/main/webapp/WEB-INF/spring/sqls/test.sql":{"default-schema":"KH","sql-editor-data-source-id":"oracle_thin-170f0429d39-4d5181bfa464e433"}}}
