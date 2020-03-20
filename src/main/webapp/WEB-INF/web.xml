@@ -95,20 +95,5 @@
 	-->
 	
 	<!-- Spring Security Filter -->
-   	<filter>
-       <filter-name>springSecurityFilterChain</filter-name>
-       <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-    </filter>
- 
-    <filter-mapping>
-         <filter-name>springSecurityFilterChain</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    
-	<!-- filter 후 객체가 생성되어야 해서 아래에 있어야 한다?  -->
-	<context-param>
-	  <param-name>contextConfigLocation</param-name>
-	  <param-value>/WEB-INF/spring/appServlet/security-context.xml</param-value>
-	</context-param>
-	-->
+
 </web-app>

@@ -4,15 +4,17 @@ a{ text-decoration: none}
 
 .title{
 	width: 100%;
-    padding-top: 115px;
-    padding-bottom: 113px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: rgb(51, 85, 139);
 }
 
 .word{
 	color: white;
     font-size: 46px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 58px;
     text-align: center;
     letter-spacing: -0.8px;
@@ -23,7 +25,7 @@ a{ text-decoration: none}
 .searchbar{
 	display: inline-block;
     width: 636px;
-    height: 30px;
+    height: 50px;
     color: rgb(34, 34, 34);
     font-size: 20px;
     border-top-style: initial;
@@ -32,7 +34,7 @@ a{ text-decoration: none}
     border-top-color: initial;
     border-right-color: initial;
     border-bottom-color: initial;
-    margin: 14px 110px 14px 54px;
+    margin: 14px 0px 14px 54px;
     padding: 0px 20px;
     border-width: 0px 0px 0px 1px;
     border-image: initial;
@@ -84,4 +86,9 @@ a{ text-decoration: none}
 
 .thirdpara{
 	margin-top:20px;
+}
+
+.search{
+	margin : auto;
+	text-align: center;
 }

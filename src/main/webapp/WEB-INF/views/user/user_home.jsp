@@ -24,6 +24,7 @@
 		</div>
 	</div>
 	<div class="firstpara">
+	<a href="review.user">리뷰</a>
 		<div>
 			<span>추천방</span>
 		</div>

@@ -6,28 +6,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="resources/user/css/room_search.css">
 <jsp:include page="/WEB-INF/views/user/header.jsp"/>
+
 </head>
 <body>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8ded785b631dc1b3efa28d959d4d6d5&libraries=services"></script>
 
-	
 <div class="container">
-	
-	<div class="all">
-		<div class="leftpara">
+	<form>
+		<div class="searchheader">
+			<div class="keyword">
+				<input type="text" name="keyword" placeholder="잠실동" class="searchbar"/>
+				<a onclick="return submit()">검색</a>
+			</div>
+			<div class="filter">
+				<div class="smallfilter">
+					<div class="seperate">
+						<span>원룸, 투·쓰리룸, 오피스텔</span>
+					</div>
+				</div>
+				<div class="smallfilter">
+					<div class="seperate">
+						<span>월세, 전세, 매매</span>
+					</div>
+				</div>
+				<div class="smallfilter">
+					<div class="seperate">
+						<span>가격대</span>
+					</div>
+				</div>
+				<div class="smallfilter">
+					<div class="seperate">
+						<span>관리비</span>
+					</div>
+				</div>
+				<div class="smallfilter">
+					<div class="seperate">
+						<span>방크기</span>
+					</div>
+				</div>
+			</div>
 			
 		</div>
-		<div id="map" style=" position:absolute; width:500px;height:400px;"></div>
+		
+	</form>		
+	
+		<div class="all">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="left">
+						<ul class="list">
+							<li class="each">
+								<div class="room">
+									<div class="favorite">
+									</div>
+									<a>
+										<div class="photo"></div>
+										<p id="roomtitle"></p>
+										<p id="price"></p>
+										<p id="explain"></p>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="map" style=" width:500px;height:400px;"></div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 
 
 	<script type="text/javascript">
