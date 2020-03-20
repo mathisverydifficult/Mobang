@@ -25,10 +25,10 @@ public class HomeController {
 	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
 		logger.info("home");
-
 		
 		return "user/user_home";
 	}
+	
 	
 	@RequestMapping(value = "home.user")
 	public String mainhome(Locale locale, Model model) {
@@ -39,6 +39,11 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping(value="index.all")
+	public String index() {
+		return "index";
+	}
+
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
 		
@@ -65,12 +70,11 @@ public class HomeController {
 	@RequestMapping(value="/review.user")
 	public String review(Model model) {
 		
-		
-		
 		logger.info("select list");
 		
 		model.addAttribute("list", biz.selectList());
 		
 		return "user/user_review";
 	}
+	
 }
