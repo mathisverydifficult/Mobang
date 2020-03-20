@@ -18,5 +18,11 @@
 	<a href="admin_report.admin">관리자 신고,승인</a><br/>
 	
 	
+	<br/>
+	<a href="agent_home.agent">중개사 홈</a><br/>
+	<a href="agent_mypage.agent">마이페이지</a><br/>
+	<a href="agent_roommanage.agent">매물관리바로가기</a><br/>
+	
+	
 </body>
 </html>
