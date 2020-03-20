@@ -25,6 +25,7 @@ public class HomeController {
 	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
 		logger.info("home");
+
 		
 		return "user/user_home";
 	}
@@ -69,6 +70,7 @@ public class HomeController {
 	
 	@RequestMapping(value="/review.user")
 	public String review(Model model) {
+		
 		
 		logger.info("select list");
 		

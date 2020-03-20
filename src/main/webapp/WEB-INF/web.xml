@@ -80,75 +80,6 @@ id="WebApp_ID" version="4.0">
       <url-pattern>/*</url-pattern>
    </filter-mapping>
 
-<<<<<<< HEAD
-	<!-- Processes application requests -->
-	<servlet>
-		<servlet-name>appServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>
-				/WEB-INF/spring/appServlet/servlet-context.xml
-				/WEB-INF/spring/appServlet/aop-context.xml
-			</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-		
-	<!-- '/' 루트로 오는 모든 요청을 appServlet(DispatcherServlet)이 받아서 적절한 controller에 넘김  -->	
-	<!-- controller에서 requestmapping 할 때, 누가 권한이 있어야 볼 수 있는 페이지라고 생각되면 끝에 .user 같이 사용 -->
-	<!--  모두가 들어가서 확인할 수 있는 요청이면 .all로 처리하기 -->
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.user</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.admin</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.all</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.agent</url-pattern>
-	</servlet-mapping>
-		
-	
-	<!-- 만들어져 있는 encoding 을 사용할거임 -->
-	<filter>
-		<filter-name>encodingFilter</filter-name>
-		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-		<init-param>> <!-- setencoding이라는 메서드와 연결되는 것 -->
-			<param-name>encoding</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-		
-		<init-param>
-			<param-name>forceEncoding</param-name>
-			<param-value>true</param-value>
-		</init-param>
-		
-	</filter>
-	
-	<filter-mapping>
-		<filter-name>encodingFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
 	<!-- logFilter를 만들어줬음을 알려준다 
 	<filter>
 		<filter-name>logFilter</filter-name>
@@ -163,8 +94,6 @@ id="WebApp_ID" version="4.0">
 	
 	<!-- Spring Security Filter -->
 
-</web-app>
-=======
    <!-- logFilter를 만들어줬음을 알려준다 
    <filter>
       <filter-name>logFilter</filter-name>
@@ -190,4 +119,3 @@ id="WebApp_ID" version="4.0">
     
 
 </web-app>
->>>>>>> 5de5a51c6e597b9c591521a49986d500071b9b3e
