@@ -80,6 +80,20 @@ id="WebApp_ID" version="4.0">
       <url-pattern>/*</url-pattern>
    </filter-mapping>
 
+	<!-- logFilter를 만들어줬음을 알려준다 
+	<filter>
+		<filter-name>logFilter</filter-name>
+		<filter-class>com.roommate.join.common.filter.LogFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>logFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	-->
+	
+	<!-- Spring Security Filter -->
+
    <!-- logFilter를 만들어줬음을 알려준다 
    <filter>
       <filter-name>logFilter</filter-name>

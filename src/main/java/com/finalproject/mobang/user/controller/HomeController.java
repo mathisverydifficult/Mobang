@@ -1,12 +1,15 @@
-package com.finalproject.mobang;
+package com.finalproject.mobang.user.controller;
 
 import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.finalproject.mobang.user.biz.reviewBiz;
 
 /**
  * Handles requests for the application home page.
@@ -15,6 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@Autowired
+	private reviewBiz biz;
 
 	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
@@ -25,7 +31,6 @@ public class HomeController {
 	}
 	
 	
-	
 	@RequestMapping(value = "home.user")
 	public String mainhome(Locale locale, Model model) {
 		logger.info("home");
@@ -33,13 +38,12 @@ public class HomeController {
 		
 		return "user/user_home";
 	}
+	
+	
 	@RequestMapping(value="index.all")
 	public String index() {
 		return "index";
 	}
-	
-	
-	
 
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
@@ -64,5 +68,15 @@ public class HomeController {
 		return "user/room_search";
 	}
 	
+	@RequestMapping(value="/review.user")
+	public String review(Model model) {
+		
+		
+		logger.info("select list");
+		
+		model.addAttribute("list", biz.selectList());
+		
+		return "user/user_review";
+	}
 	
 }

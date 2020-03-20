@@ -13,6 +13,7 @@
 
 
 <title>Insert title here</title>
+<jsp:include page="/WEB-INF/views/user/header.jsp"/>
 </head>
 <body>
 

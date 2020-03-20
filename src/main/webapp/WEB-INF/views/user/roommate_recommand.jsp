@@ -59,6 +59,7 @@
 
 
 <title>부동산 필수앱 모방</title>
+<jsp:include page="/WEB-INF/views/user/header.jsp"/>
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/user/header.jsp"/>

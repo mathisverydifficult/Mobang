@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.finalproject</groupId>
@@ -168,7 +169,6 @@
           <artifactId>aspectjrt</artifactId>
           <version>${org.aspectj-version}</version>
       </dependency>
-      
       
       <!-- 스프링 버전 높은 거 사용할 때는 높은 버전을 사용해라 -->
       <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->

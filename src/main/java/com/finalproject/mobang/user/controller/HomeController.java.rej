@@ -1,0 +1,9 @@
+diff a/src/main/java/com/finalproject/mobang/user/controller/HomeController.java b/src/main/java/com/finalproject/mobang/user/controller/HomeController.java	(rejected hunks)
+@@ -70,7 +70,6 @@
+ 	@RequestMapping(value="/review.user")
+ 	public String review(Model model) {
+ 		
+-		
+ 		logger.info("select list");
+ 		
+ 		model.addAttribute("list", biz.selectList());

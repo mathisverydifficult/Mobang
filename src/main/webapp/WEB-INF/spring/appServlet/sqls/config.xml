@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+	<typeAliases>
+		<typeAlias type="com.finalproject.mobang.user.dto.reviewDto" alias="reviewDto"/>
+	</typeAliases>
+
+
+	<!-- resource : src/main/resources를 가장 먼저 검색 -->
+	<!-- src/main/resources/mybatis/board-mapper.xml -->
+	<mappers>
+		<mapper resource="/mybatis/board-mapper.xml"/>
+	</mappers>
+
+</configuration>

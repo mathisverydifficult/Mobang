@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+{"resources":{"src/main/webapp/WEB-INF/spring/appServlet/sqls/test.sql":{"sql-editor-data-source-id":"oracle_thin-170f0f690ef-7a032b22f5b374c5"}}}
+=======
 {"resources":{"src/main/webapp/WEB-INF/spring/sqls/admin.sql":{"sql-editor-data-source-id":"oracle_thin-170f0429d39-4d5181bfa464e433","default-schema":"KH"},"src/main/webapp/WEB-INF/spring/sqls/test.sql":{"default-schema":"KH","sql-editor-data-source-id":"oracle_thin-170f0429d39-4d5181bfa464e433"}}}
+>>>>>>> 5de5a51c6e597b9c591521a49986d500071b9b3e

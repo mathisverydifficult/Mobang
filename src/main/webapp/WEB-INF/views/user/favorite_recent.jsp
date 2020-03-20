@@ -141,7 +141,7 @@
       	<div class="col-sm-3">
       		<button type="button" class="btn btn-info">Info</button>
       	</div>    
-      </div>
+      </div> 
       
     </div>
     <div class="col-sm-3">
