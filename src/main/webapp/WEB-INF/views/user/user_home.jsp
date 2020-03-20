@@ -6,8 +6,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
@@ -15,10 +13,9 @@
 </head>
 <jsp:include page="/WEB-INF/views/user/header.jsp"/>
 <body>
-<<<<<<< HEAD
-	<a href="login.do">hello</a>
-	<a href="hello.do">hello</a>
-=======
+	<a href="login.all">login</a>
+	<a href="agentsignup.all">agent_signup</a>
+	<a href="usersignup.all">user_signup</a>
 <div class="container">
 	<div class="title">
 		<p class="word">어디 살래요?</p>

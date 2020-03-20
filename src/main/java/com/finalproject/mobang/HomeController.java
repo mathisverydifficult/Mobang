@@ -1,7 +1,5 @@
 package com.finalproject.mobang;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -9,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Handles requests for the application home page.
@@ -18,25 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-<<<<<<< HEAD
-	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String user_home(Locale locale, Model model) {
-		return "user/user_home";
-	}
-	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "login.do", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		
-		return "login/login";
-	}
-	
-
-	
-=======
 
 	@RequestMapping(value = "/")
 	public String home(Locale locale, Model model) {
@@ -46,6 +24,31 @@ public class HomeController {
 		return "user/user_home";
 	}
 	
+	@RequestMapping(value = "/login.all")
+	public String login(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "login/login";
+	}
+	
+	@RequestMapping(value = "/usersignup.all")
+	public String usersignup(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "login/user_signup";
+	}
+	
+	@RequestMapping(value = "/agentsignup.all")
+	public String agentsignup(Locale locale, Model model) {
+		logger.info("home");
+
+		
+		return "login/agent_signup";
+	}
+	
+	
 	@RequestMapping(value = "home.user")
 	public String mainhome(Locale locale, Model model) {
 		logger.info("home");
@@ -53,6 +56,13 @@ public class HomeController {
 		
 		return "user/user_home";
 	}
+	@RequestMapping(value="index.all")
+	public String index() {
+		return "index";
+	}
+	
+	
+	
 
 	@RequestMapping(value="/roommate_recommand.user")
 	public String roommaterecommand(Model model) {
@@ -76,5 +86,6 @@ public class HomeController {
 		
 		return "user/room_search";
 	}
->>>>>>> c91ddfeecd27b863d47e854016734249f3d8cd1e
+	
+	
 }

@@ -18,23 +18,29 @@
 		<div class="row">
 			<div class="col-xs-6 col-md-4"></div>
 			<div class="col-xs-6 col-md-4" id="main">
-				<h2><a href="#">모방</a>｜ 로그인</h2>
+				<h2><a class="mobang" href="#">모방</a>｜ 로그인</h2>
 				<hr class="hr"/>
 				<form role="form" action="">
 					<div class="form-group">
-						<label>아이디</label> <input type="text" class="form-control" placeholder="아이디를 입력하세요.">
+						<label>이메일</label> <input type="email" class="form-control" name="email" placeholder="이메일을 입력하세요.">
 					</div>
 					<div class="form-group">
-						<label>비밀번호</label> <input type="password" class="form-control" placeholder="비밀번호를 입력하세요.">
+						<label>비밀번호</label> <input type="password" class="form-control" name="pwd" placeholder="비밀번호를 입력하세요.">
 						<div class="pwfind">
-							<span id="pwfind_span"><a id="pwfind_a" href="#">비밀번호 찾기</a></span>
+							<span id="pwfind_span"><a class="none_blue" data-toggle="modal" href="#pwfind_modal">비밀번호 찾기</a></span>
 						</div>
 					</div>
 					<div class="button_group">
 						<input class="login_btn" type="submit" value="로그인">
-						<input class="sns_btn" id="kakao" type="button" value="카카오톡 로그인">
-						<input class="sns_btn" id="google" type="button" value="구글 로그인">
-					</div>
+						<div class="sns" id="sns_naver">
+							<img src="resources/images/naver.png" class="img-rounded">
+							<input class="sns_btn" id="naver" type="button" value="네이버 로그인">
+						</div>
+						<div class="sns" id="sns_kakao">
+							<img src="resources/images/kakao.JPG" class="img-rounded">
+							<input class="sns_btn" id="kakao" type="button" value="카카오톡 로그인">
+						</div>
+					</div >
 					<div class="signup">
 						<span>회원이 아니세요?</span><br/>
 						<span>공인중개사라면?</span>
@@ -47,6 +53,37 @@
 			</div>
 			<div class="col-xs-6 col-md-4"></div>
 		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="pwfind_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+      			<div class="modal-header">
+        			<h4 class="modal-title" id="myModalLabel">비밀번호 찾기</h4>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     			 </div>
+     			 <div class="modal-body">
+       				 <div class="form-group" id="modal_email">
+						<label>이메일</label> 
+						<input type="email" class="form-control" id="inputEmail" name="pwfindemail" placeholder="이메일을 입력하세요.">
+						<input type="button" class="email_confirm" value="전송">
+						<label>인증번호</label> 
+						<input type="text" class="form-control" name="code" placeholder="인증번호를 입력하세요.">
+					</div>
+					<div class="form-group" id="modal_pwd">
+						<label for="exampleInputEmail1">비밀번호</label> 
+						<input type="email" class="form-control" id="pwd_find" name="pwfindpwd" placeholder="비밀번호를 입력하세요.">
+						<label>비밀번호 확인</label> 
+						<input type="text" class="form-control" name="pwfindpwdconfirm" placeholder="비밀번호를 입력하세요.">
+					</div>
+     			 </div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+        			<button type="button" class="btn btn-default" id="ok" data-dismiss="modal">확인</button>
+      			</div>
+    		</div>
+ 		 </div>
 	</div>
 </body>
 </html>
