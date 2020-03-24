@@ -47,7 +47,7 @@ window.onload = function (){
 				<p>모든 부동산 매물관리는</p>
 				<p>모방</p>
 			</h1>
-			<a href="">시작하기</a>
+			<a href="roommanage.agent">시작하기</a>
 		</div>
 	</div>
 

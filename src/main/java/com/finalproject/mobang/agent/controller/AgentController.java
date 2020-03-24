@@ -16,4 +16,22 @@ public class AgentController {
 	public String adminUser(Model model) {
 		return "/agent/agent_home";
 	}
+	
+	@RequestMapping(value="/notice.agent")
+	public String notice(Model model) {
+		
+		return "/agent/agent_notice";
+	}
+	
+	@RequestMapping(value="/fnq.agent")
+	public String fnq(Model model) {
+		
+		return "/agent/agent_fnq";
+	}
+	
+	@RequestMapping(value="/roommanage.agent")
+	public String roommanage(Model model) {
+		
+		return "/agent/agent_roommanage";
+	}
 }

@@ -15,8 +15,8 @@
 	
 	<div class="agenthead">
 		<div class="headleft">
-			<h1>모방 | 공인중개사</h1>
-			<a href="#"><div class="h2">모방 사이트></div></a>
+			<a style=""href="agent_home.agent"><h1>모방 | 공인중개사</h1></a>
+			<a href="home.user"><div class="h2">모방 사이트></div></a>
 		</div>
 		<div class="headright">
 			<ul>
@@ -30,8 +30,8 @@
 				</li>
 				<li class="first"><a href="#">고객센터</a>
 					<article class="scsubmenu">
-						<a href="#"><div class="submenu">공지사항</div></a>
-						<a href="#"><div class="submenu">문의사항</div></a>
+						<a href="notice.agent"><div class="submenu">공지사항</div></a>
+						<a href="fnq.agent"><div class="submenu">문의사항</div></a>
 					</article>
 				</li>
 				<li class="second" style="margin-left: 25px;">
@@ -39,7 +39,7 @@
 					<a href="#">회원가입</a>
 				</li>
 				<li>
-					<a href="#"><div class="button">매물관리 바로가기</div></a>
+					<a href="roommanage.agent"><div class="button">매물관리 바로가기</div></a>
 				</li>
 			</ul>
 		</div>
